@@ -34,9 +34,18 @@ public class MailListener {
             mimeMessage=javaMailSender.createMimeMessage();
             MimeMessageHelper msgHelper=new MimeMessageHelper(mimeMessage,true);
             //发送人邮箱
-            msgHelper.setFrom("XXXXXX");
+            msgHelper.setFrom("XXXXXXX");
             //收件人邮箱(单个)
-            msgHelper.setTo("XXXXXXX");
+            msgHelper.setTo("XXXXXXXX");
+            /**
+             * 发送多人
+             * //收件人
+             *             InternetAddress[] internetAddresses=new InternetAddress[]{
+             *                     new InternetAddress("XXXXXXX.com","","utf-8"),
+             *                     new InternetAddress("XXXXXXX.com","","utf-8")
+             *             };
+             *             msgHelper.setTo(internetAddresses);
+             */
             //主题
             msgHelper.setSubject("服务器系统传错误，请尽快处理！");
             //拼接好发送的内容

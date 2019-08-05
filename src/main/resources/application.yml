@@ -7,14 +7,14 @@ spring:
     auto: true
   mail:
     host: 220.181.12.11   #linux有时候不能有效的进行域名解析，所以我们直接用smtp.163.com来ping一下获取真实的ip地址
-    username: XXXX  #填写你的邮箱地址(发送人)
-    password: XXXX  #你的邮箱密码
+    username: XXXXXX  #填写你的邮箱地址(发送人)
+    password: XXXXXX  #你的邮箱密码
     default-encoding: UTF-8
     properties:
       mail:
         smtp:
           auth: true
-          port: 465 #使用465端口 因为在服务器上25端口不能用
+          port: 465  #使用465端口 因为在服务器上25端口不能用
           socketFactory:
             port: 465
             class: javax.net.ssl.SSLSocketFactory
